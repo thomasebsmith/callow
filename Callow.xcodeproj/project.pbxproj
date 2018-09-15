@@ -55,6 +55,7 @@
 		E93F53A92148BC7100872B02 /* AddItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
 		E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Callow.xcdatamodel; sourceTree = "<group>"; };
 		E94CC6D5214950B800F66ACA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E9856708214D5A6E00A1C450 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		E93F536F2148B54900872B02 = {
 			isa = PBXGroup;
 			children = (
+				E9856708214D5A6E00A1C450 /* README.md */,
 				E93F537A2148B54900872B02 /* Callow */,
 				E93F538F2148B54B00872B02 /* CallowTests */,
 				E93F539A2148B54B00872B02 /* CallowUITests */,
