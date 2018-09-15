@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9294147214CB0F30042F7F3 /* DailyViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9294146214CB0F30042F7F3 /* DailyViewVC.swift */; };
 		E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537B2148B54900872B02 /* AppDelegate.swift */; };
 		E93F537E2148B54900872B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537D2148B54900872B02 /* ViewController.swift */; };
 		E93F53812148B54900872B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93F537F2148B54900872B02 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		E93F53862148B54B00872B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93F53842148B54B00872B02 /* LaunchScreen.storyboard */; };
 		E93F53912148B54B00872B02 /* CallowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F53902148B54B00872B02 /* CallowTests.swift */; };
 		E93F539C2148B54B00872B02 /* CallowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F539B2148B54B00872B02 /* CallowUITests.swift */; };
+		E93F53AA2148BC7100872B02 /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F53A92148BC7100872B02 /* AddItemVC.swift */; };
+		E94CC6D421494FCF00F66ACA /* Callow.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */; };
+		E94CC6D6214950B800F66ACA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CC6D5214950B800F66ACA /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9294146214CB0F30042F7F3 /* DailyViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewVC.swift; sourceTree = "<group>"; };
 		E93F53782148B54900872B02 /* Callow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Callow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93F537B2148B54900872B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E93F537D2148B54900872B02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		E93F53972148B54B00872B02 /* CallowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93F539B2148B54B00872B02 /* CallowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallowUITests.swift; sourceTree = "<group>"; };
 		E93F539D2148B54B00872B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E93F53A92148BC7100872B02 /* AddItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
+		E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Callow.xcdatamodel; sourceTree = "<group>"; };
+		E94CC6D5214950B800F66ACA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				E93F537B2148B54900872B02 /* AppDelegate.swift */,
+				E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */,
+				E94CC6D5214950B800F66ACA /* DataManager.swift */,
 				E93F537D2148B54900872B02 /* ViewController.swift */,
 				E93F537F2148B54900872B02 /* Main.storyboard */,
+				E9294146214CB0F30042F7F3 /* DailyViewVC.swift */,
+				E93F53A92148BC7100872B02 /* AddItemVC.swift */,
 				E93F53822148B54B00872B02 /* Assets.xcassets */,
 				E93F53842148B54B00872B02 /* LaunchScreen.storyboard */,
 				E93F53872148B54B00872B02 /* Info.plist */,
@@ -256,7 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94CC6D421494FCF00F66ACA /* Callow.xcdatamodel in Sources */,
+				E94CC6D6214950B800F66ACA /* DataManager.swift in Sources */,
 				E93F537E2148B54900872B02 /* ViewController.swift in Sources */,
+				E9294147214CB0F30042F7F3 /* DailyViewVC.swift in Sources */,
+				E93F53AA2148BC7100872B02 /* AddItemVC.swift in Sources */,
 				E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
