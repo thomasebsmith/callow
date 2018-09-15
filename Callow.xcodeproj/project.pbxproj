@@ -18,6 +18,7 @@
 		E93F53AA2148BC7100872B02 /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F53A92148BC7100872B02 /* AddItemVC.swift */; };
 		E94CC6D421494FCF00F66ACA /* Callow.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */; };
 		E94CC6D6214950B800F66ACA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CC6D5214950B800F66ACA /* DataManager.swift */; };
+		E985670A214D5F2300A1C450 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9856709214D5F2300A1C450 /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Callow.xcdatamodel; sourceTree = "<group>"; };
 		E94CC6D5214950B800F66ACA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E9856708214D5A6E00A1C450 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E9856709214D5F2300A1C450 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E94CC6D5214950B800F66ACA /* DataManager.swift */,
 				E93F537D2148B54900872B02 /* ViewController.swift */,
 				E93F537F2148B54900872B02 /* Main.storyboard */,
+				E9856709214D5F2300A1C450 /* ItemDetailsVC.swift */,
 				E9294146214CB0F30042F7F3 /* DailyViewVC.swift */,
 				E93F53A92148BC7100872B02 /* AddItemVC.swift */,
 				E93F53822148B54B00872B02 /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94CC6D421494FCF00F66ACA /* Callow.xcdatamodel in Sources */,
+				E985670A214D5F2300A1C450 /* ItemDetailsVC.swift in Sources */,
 				E94CC6D6214950B800F66ACA /* DataManager.swift in Sources */,
 				E93F537E2148B54900872B02 /* ViewController.swift in Sources */,
 				E9294147214CB0F30042F7F3 /* DailyViewVC.swift in Sources */,

@@ -17,6 +17,8 @@ class DailyViewVC: UITableViewController {
     private var items : [Item] = []
     private let reuseIdentifier = "dailyViewCell"
     private let cellTag = 1
+    private let itemDetailsSegueIdentifier = "itemDetailsSegue"
+    private var selectedItem: Item? = nil
     
     // MARK: - Custom Methods
     func loadItems() {
@@ -74,6 +76,14 @@ class DailyViewVC: UITableViewController {
         return 1
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == itemDetailsSegueIdentifier {
+            if let itemDetailsVC = segue.destination as? ItemDetailsVC {
+                itemDetailsVC.setItem(selectedItem)
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -98,6 +108,11 @@ class DailyViewVC: UITableViewController {
                 print("Unable to delete item\n")
             }
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedItem = items[indexPath.row]
+        self.performSegue(withIdentifier: itemDetailsSegueIdentifier, sender: self)
     }
     
     override func viewDidLoad() {
