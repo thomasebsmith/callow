@@ -210,13 +210,16 @@
 				TargetAttributes = {
 					E93F53772148B54900872B02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					E93F538B2148B54B00872B02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = E93F53772148B54900872B02;
 					};
 					E93F53962148B54B00872B02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = E93F53772148B54900872B02;
 					};
 				};
@@ -460,7 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.Callow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,7 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.Callow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -496,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.CallowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Callow.app/Callow";
 			};
@@ -516,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.CallowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Callow.app/Callow";
 			};
@@ -535,7 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.CallowUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Callow;
 			};
@@ -554,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.thomasebsmith.CallowUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Callow;
 			};
