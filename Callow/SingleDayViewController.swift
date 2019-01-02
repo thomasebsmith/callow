@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SingleDayViewController.swift
 //  Callow
 //
 //  Created by Thomas Smith on 9/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SingleDayViewController: UIViewController {
     
     // MARK: - Class Properties
     @IBOutlet weak var dayNavigationBar: UINavigationBar!
