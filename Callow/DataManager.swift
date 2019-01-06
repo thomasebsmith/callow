@@ -91,6 +91,28 @@ class DataManager {
         return result
     }
     
+    func hasEventsAfter(day: Date) -> Bool {
+        let context = persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: itemName)
+        do {
+            let items = try context.fetch(request)
+            for genericItem in items {
+                if let item = genericItem as? Item {
+                    if let date = item.date {
+                        if Calendar.current.isDate(date, inSameDayAs: day) ||
+                           date > day {
+                            return true
+                        }
+                    }
+                }
+            }
+        }
+        catch {
+            print("Error check for items after date \(day)\n")
+        }
+        return false
+    }
+    
     func onUpdate(_ callback: @escaping (_ day: Date) -> ()) {
         updateListeners.append(callback)
     }
