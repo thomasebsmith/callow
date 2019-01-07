@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9294147214CB0F30042F7F3 /* DailyViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9294146214CB0F30042F7F3 /* DailyViewVC.swift */; };
+		E918CC4421E3067B00013736 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918CC4321E3067B00013736 /* ItemListViewController.swift */; };
 		E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537B2148B54900872B02 /* AppDelegate.swift */; };
 		E93F537E2148B54900872B02 /* SingleDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537D2148B54900872B02 /* SingleDayViewController.swift */; };
 		E93F53812148B54900872B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93F537F2148B54900872B02 /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9294146214CB0F30042F7F3 /* DailyViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewVC.swift; sourceTree = "<group>"; };
+		E918CC4321E3067B00013736 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		E93F53782148B54900872B02 /* Callow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Callow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93F537B2148B54900872B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E93F537D2148B54900872B02 /* SingleDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDayViewController.swift; sourceTree = "<group>"; };
@@ -116,12 +116,12 @@
 				E93F537B2148B54900872B02 /* AppDelegate.swift */,
 				E94CC6D321494FCF00F66ACA /* Callow.xcdatamodel */,
 				E94CC6D5214950B800F66ACA /* DataManager.swift */,
+				E918CC4321E3067B00013736 /* ItemListViewController.swift */,
 				E93F537D2148B54900872B02 /* SingleDayViewController.swift */,
 				E9FB0FC821DC691700CE2C3F /* ViewController.swift */,
 				E93F537F2148B54900872B02 /* Main.storyboard */,
 				E9C7FAC921E1B3AE00066B85 /* UpcomingViewController.swift */,
 				E9856709214D5F2300A1C450 /* ItemDetailsVC.swift */,
-				E9294146214CB0F30042F7F3 /* DailyViewVC.swift */,
 				E93F53A92148BC7100872B02 /* AddItemVC.swift */,
 				E93F53822148B54B00872B02 /* Assets.xcassets */,
 				E93F53842148B54B00872B02 /* LaunchScreen.storyboard */,
@@ -283,11 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94CC6D421494FCF00F66ACA /* Callow.xcdatamodel in Sources */,
+				E918CC4421E3067B00013736 /* ItemListViewController.swift in Sources */,
 				E985670A214D5F2300A1C450 /* ItemDetailsVC.swift in Sources */,
 				E94CC6D6214950B800F66ACA /* DataManager.swift in Sources */,
 				E9C7FACA21E1B3AE00066B85 /* UpcomingViewController.swift in Sources */,
 				E93F537E2148B54900872B02 /* SingleDayViewController.swift in Sources */,
-				E9294147214CB0F30042F7F3 /* DailyViewVC.swift in Sources */,
 				E93F53AA2148BC7100872B02 /* AddItemVC.swift in Sources */,
 				E9FB0FC921DC691700CE2C3F /* ViewController.swift in Sources */,
 				E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */,

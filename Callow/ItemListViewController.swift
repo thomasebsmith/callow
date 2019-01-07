@@ -1,35 +1,25 @@
 //
-//  DailyViewVC.swift
+//  ItemListViewController.swift
 //  Callow
 //
-//  Created by Thomas Smith on 9/11/18.
-//  Copyright © 2018 Thomas Smith. All rights reserved.
+//  Created by Thomas Smith on 1/6/19.
+//  Copyright © 2019 Thomas Smith. All rights reserved.
 //
 
 import UIKit
 
-class DailyViewVC: UITableViewController {
-    
+class ItemListViewController: UITableViewController {
     // MARK: - Class Properties
-    // Day defaults to current date (today) if not specified
-    private var day = Date(timeIntervalSinceNow: 0)
-    private var dataManager : DataManager? = nil
-    private var items : [Item] = []
-    private let reuseIdentifier = "dailyViewCell"
+    private let reuseIdentifier = "itemCell"
     private let cellTag = 1
     private let itemDetailsSegueIdentifier = "itemDetailsSegue"
     private var selectedItem: Item? = nil
+    private var items: [Item] = []
+    private var dataManager : DataManager? = nil
     
-    // MARK: - Custom Methods
-    func loadItems() {
-        if let manager = dataManager {
-            items = manager.getItemsForDay(day: day)
-        }
-        else {
-            print("No data manager. Using empty items array\n")
-            items = []
-        }
-        self.tableView.reloadData()
+    // MARK: - Custom methods
+    func setItems(_ newItems: [Item]) {
+        items = newItems
     }
     
     func formatText(_ item: Item) -> String {
@@ -47,41 +37,16 @@ class DailyViewVC: UITableViewController {
         return time + title
     }
     
-    func setDay(_ newDay: Date) {
-        // Reload the items in the table if a new day is specified
-        if !Calendar.current.isDate(newDay, inSameDayAs: day) {
-            day = newDay
-            loadItems()
-        }
-    }
-    
-    func getDay() -> Date {
-        return day
-    }
-    
-    func goBackOneDay() {
-        if let newDay = Calendar.current.date(byAdding: .day, value: -1, to: day) {
-            setDay(newDay)
-        }
-    }
-    
-    func goForwardOneDay() {
-        if let newDay = Calendar.current.date(byAdding: .day, value: 1, to: day) {
-            setDay(newDay)
-        }
-    }
-    
     // MARK: - Overrides
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            dataManager = delegate.dataManager
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == itemDetailsSegueIdentifier {
-            if let itemDetailsVC = segue.destination as? ItemDetailsVC {
-                itemDetailsVC.setItem(selectedItem)
-            }
-        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -115,10 +80,12 @@ class DailyViewVC: UITableViewController {
         self.performSegue(withIdentifier: itemDetailsSegueIdentifier, sender: self)
     }
     
-    override func viewDidLoad() {
-        if let delegate = UIApplication.shared.delegate as? AppDelegate {
-            dataManager = delegate.dataManager
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == itemDetailsSegueIdentifier {
+            if let itemDetailsVC = segue.destination as? ItemDetailsVC {
+                itemDetailsVC.setItem(selectedItem)
+            }
         }
-        loadItems()
     }
+
 }
