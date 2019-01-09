@@ -20,6 +20,7 @@ class ItemListViewController: UITableViewController {
     // MARK: - Custom methods
     func setItems(_ newItems: [Item]) {
         items = newItems
+        tableView.reloadData()
     }
     
     func formatText(_ item: Item) -> String {

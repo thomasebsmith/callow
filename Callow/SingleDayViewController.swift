@@ -17,7 +17,7 @@ class SingleDayViewController: UIViewController {
     private var day = Date(timeIntervalSinceNow: 0)
     private var dataManager : DataManager? = nil
     private var itemListVC: ItemListViewController? = nil
-    private let itemListSegueIdentifier = "upcomingItemListEmbed"
+    private let itemListSegueIdentifier = "singleDayItemListEmbed"
     
     // MARK: - Custom Methods
     func loadItems() {
