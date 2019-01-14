@@ -1,5 +1,5 @@
 //
-//  ItemListViewController.swift
+//  ItemListVC.swift
 //  Callow
 //
 //  Created by Thomas Smith on 1/6/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemListViewController: UITableViewController {
+class ItemListVC: UITableViewController {
     // MARK: - Class Properties
     private let reuseIdentifier = "itemCell"
     private let cellTag = 1

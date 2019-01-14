@@ -1,5 +1,5 @@
 //
-//  UpcomingViewController.swift
+//  UpcomingVC
 //  Callow
 //
 //  Created by Thomas Smith on 1/5/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class UpcomingViewController: UIViewController {
+class UpcomingVC: UIViewController {
     // MARK: - Class properties
     private var today = Date(timeIntervalSinceNow: 0)
     private var dataManager : DataManager? = nil
     private let maxItems = 20
     private let itemListSegueIdentifier = "upcomingItemListEmbed"
-    private var itemListVC: ItemListViewController? = nil
+    private var itemListVC: ItemListVC? = nil
     
     // MARK: - Custom methods
     func loadItems() {
@@ -56,7 +56,7 @@ class UpcomingViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == itemListSegueIdentifier {
-            if let theItemListVC = segue.destination as? ItemListViewController {
+            if let theItemListVC = segue.destination as? ItemListVC {
                 if let delegate = UIApplication.shared.delegate as? AppDelegate {
                     dataManager = delegate.dataManager
                 }

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Upcoming View Controller-->
+        <!--UpcomingVC-->
         <scene sceneID="NWb-Qc-14d">
             <objects>
-                <viewController storyboardIdentifier="upcomingVC" id="ucP-tq-BxU" customClass="UpcomingViewController" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="upcomingVC" id="ucP-tq-BxU" customClass="UpcomingVC" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9MM-ju-xzO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-1012" y="402"/>
         </scene>
-        <!--Single Day View Controller-->
+        <!--Single DayVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="singleDayVC" id="BYZ-38-t0r" customClass="SingleDayViewController" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singleDayVC" id="BYZ-38-t0r" customClass="SingleDayVC" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="-615.20000000000005" y="-269.41529235382313"/>
         </scene>
-        <!--Item List View Controller-->
+        <!--Item ListVC-->
         <scene sceneID="ASr-6U-ttF">
             <objects>
-                <tableViewController id="4G4-ki-fug" customClass="ItemListViewController" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4G4-ki-fug" customClass="ItemListVC" customModule="Callow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yex-FJ-EAX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

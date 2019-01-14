@@ -1,5 +1,5 @@
 //
-//  SingleDayViewController.swift
+//  SingleDayVC
 //  Callow
 //
 //  Created by Thomas Smith on 9/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SingleDayViewController: UIViewController {
+class SingleDayVC: UIViewController {
     
     // MARK: - Class Properties
     @IBOutlet weak var dayNavigationBar: UINavigationBar!
@@ -16,7 +16,7 @@ class SingleDayViewController: UIViewController {
     // Day defaults to current date (today) if not specified
     private var day = Date(timeIntervalSinceNow: 0)
     private var dataManager : DataManager? = nil
-    private var itemListVC: ItemListViewController? = nil
+    private var itemListVC: ItemListVC? = nil
     private let itemListSegueIdentifier = "singleDayItemListEmbed"
     
     // MARK: - Custom Methods
@@ -83,7 +83,7 @@ class SingleDayViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == itemListSegueIdentifier {
-            if let theItemListVC = segue.destination as? ItemListViewController {
+            if let theItemListVC = segue.destination as? ItemListVC {
                 if let delegate = UIApplication.shared.delegate as? AppDelegate {
                     dataManager = delegate.dataManager
                 }
