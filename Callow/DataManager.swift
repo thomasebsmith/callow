@@ -69,6 +69,11 @@ class DataManager {
         return saveData(day)
     }
     
+    func save(_ item: Item) -> Bool {
+        let day = item.date
+        return saveData(day)
+    }
+    
     func getItemsForDay(day: Date) -> [Item] {
         let context = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: itemName)

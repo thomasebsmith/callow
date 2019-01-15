@@ -16,6 +16,7 @@ class ItemDetailsVC: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     private var item: Item? = nil
+    private let editItemSegueID = "editItemSegue"
     
     // MARK: - Private Methods
     private func getTitleText() -> String {
@@ -58,6 +59,19 @@ class ItemDetailsVC: UIViewController {
     // MARK: - Navigation
     @IBAction func closeItemDetails(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == editItemSegueID {
+            guard let controller = segue.destination as? EditItemVC else {
+                print("Invalid edit item segue")
+                return
+            }
+            guard let item = item else {
+                print("No item when segueing to edit item")
+                return
+            }
+            controller.setItem(item)
+        }
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E918CC4421E3067B00013736 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918CC4321E3067B00013736 /* ItemListVC.swift */; };
+		E92CFAAF21ED911D00BCA910 /* EditItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92CFAAE21ED911D00BCA910 /* EditItemVC.swift */; };
 		E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537B2148B54900872B02 /* AppDelegate.swift */; };
 		E93F537E2148B54900872B02 /* SingleDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F537D2148B54900872B02 /* SingleDayVC.swift */; };
 		E93F53812148B54900872B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93F537F2148B54900872B02 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		E918CC4321E3067B00013736 /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
+		E92CFAAE21ED911D00BCA910 /* EditItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemVC.swift; sourceTree = "<group>"; };
 		E93F53782148B54900872B02 /* Callow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Callow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93F537B2148B54900872B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E93F537D2148B54900872B02 /* SingleDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDayVC.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				E9C7FAC921E1B3AE00066B85 /* UpcomingVC.swift */,
 				E9856709214D5F2300A1C450 /* ItemDetailsVC.swift */,
 				E93F53A92148BC7100872B02 /* AddItemVC.swift */,
+				E92CFAAE21ED911D00BCA910 /* EditItemVC.swift */,
 				E93F53822148B54B00872B02 /* Assets.xcassets */,
 				E93F53842148B54B00872B02 /* LaunchScreen.storyboard */,
 				E93F53872148B54B00872B02 /* Info.plist */,
@@ -291,6 +294,7 @@
 				E93F53AA2148BC7100872B02 /* AddItemVC.swift in Sources */,
 				E9FB0FC921DC691700CE2C3F /* ViewController.swift in Sources */,
 				E93F537C2148B54900872B02 /* AppDelegate.swift in Sources */,
+				E92CFAAF21ED911D00BCA910 /* EditItemVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
